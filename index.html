@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/aliancas-de-casamento.png" type="image/png">
+    <title>Casamento</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img class="LOGO" src="img/arco-de-casamento.png" alt="suzano" />
+          </a>
+        </div>
+
+        <ul class="navbar-nav-left">
+          <li>
+            <a href="index.html">Convite</a>
+          </li>
+        </ul>
+        
+        <!-- Hamburger Menu -->
+        <button type="button" class="hamburger" id="menu-btn">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+      <ul>
+        <li>
+          <a href="index.html">Convite</a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu-bottom">
+        </div>
+      </div>
+    </div>
+
+    <!-- Box A -->
+    <section class="box box-a bg-primary text-center py-md">
+      <img src="img/nos.jpg" alt="Logo Branca" height="40%"  width="40%"/>
+      <div class="box-inner">
+        <h2 class="text-xl">&#9825 Isabela e Pedro &#9825 </h2>
+        <p class="text-md">
+        </p>
+      </div>
+    </section>
+
+   <!-- Box B -->
+   <section class="box box-c bg-secondary grid-col-2 grid-reversed">
+    <div id="countdown" class="box-text">
+      <h2 class="text-xl">Contagem Regressiva</h2>
+      <p id="countdown-timer" class="text-md">Carregando...</p>
+    </div>
+    <div class="box-text">
+      <img src="img/dia-do-casamento.png"  height="15%" width="15%">
+      <p class="text-md">
+        queremos convidar você para o dia mais importante das nossas vidas, nosso casamento, que ocorrerá no dia 30 de Novembro de 2024!</p>
+       </div>
+  </section>
+  
+  <!-- Adicione o script JavaScript para calcular o tempo restante -->
+  <script>
+    function updateCountdown() {
+      const targetDate = new Date('2024-11-30T00:00:00');
+      const now = new Date();
+      const timeDifference = targetDate - now;
+  
+      if (timeDifference <= 0) {
+        document.getElementById('countdown-timer').textContent = 'O prazo expirou!';
+        return;
+      }
+  
+      const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+  
+      document.getElementById('countdown-timer').textContent = `${days} dias ${hours} horas ${minutes} minutos ${seconds} segundos`;
+    }
+  
+    // Atualizar o contador ao carregar a página
+    updateCountdown();
+  
+    // Opcional: atualizar o contador a cada segundo
+    setInterval(updateCountdown, 1000); // 1000 ms = 1 segundo
+  </script>
+  
+
+
+    <!-- Box D -->
+    <section class="box box-d bg-primary grid-col-2">
+      <img src="img/2024-05-23.jpg" alt="" />
+      <div class="box-text">
+        <h2 class="text-xl">Local do Almoço</h2>
+        <p class="text-md">
+          o almoço será realizado no Restaurante Fazenda em Santa Bárbara D’Oeste, para ter acesso a localização clique no botão abaixo...
+        </p>
+        <a href="https://www.google.com/maps/dir/-22.7442688,-47.2809472/fazenda+restaurante+sbo+maps/@-22.7456917,-47.4053655,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94c89bf812d24cdf:0x5604ecfe4c5b16f3!2m2!1d-47.3650771!2d-22.7464375?entry=ttu" class="btn btn-light-outline">Acesse Aqui</a>
+      </div>
+    </section>
+
+ <!-- Box E -->
+<section class="box box-e bg-secondary grid-col-2 grid-reversed">
+  <div class="iframe-container">
+    <img src="img/IMG_20230825_210752150_HDR.jpg" alt="">
+    </div>
+  <div class="box-text">
+    <h2 class="text-xl">confirme sua presença</h2>
+    <p class="text-sm">
+      para que possamos ter um controle melhor de presença de convidados, pedimos para que TODOS da família que forem comparecer no evento preencham o cadastro…
+    </p>
+   <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jplv-ZUREE3SFZJVTZDODBKSUpBVVZDVzJOSVBRQS4u" class="btn btn-light-outline">Clique Aqui</a>
+  </div>
+</section>
+
+     <!-- Box f -->
+<section class="box box-d bg-extra grid-col-2 grid-col-2">
+  <div class="iframe-container">
+    <img src="img/melhores-praias-de-caraguatatuba-dicas.jpg" alt="">
+    </div>
+  <div class="box-text">
+    <h2 class="text-xl">PIX </h2>
+    <p class="text-sm">
+      caso queira nos presentear ou contribuir de alguma forma com nosso casamento, entre no link abaixo e contribua com o valor desejado...</p>
+    <a href="https://nubank.com.br/cobrar/v5qw4/66b167c0-6f6a-46a8-a40a-8ffb247718fc " class="btn btn-dark-outline">Clique Aqui</a>
+  </div>
+</section>
+
+    <div class="divider"></div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
