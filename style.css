@@ -18,6 +18,18 @@
 }
 
 
+.aviso-tematico {
+  background-color: #d8000c; /* Escolha uma cor que combine com o tema */
+  color: #ffffff; /* Cor do texto */
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0;
+  border: 2px solid #d8000c; /* Bordas se desejar */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+
 
 .team-container {
   display: flex;
